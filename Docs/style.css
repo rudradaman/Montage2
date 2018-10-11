@@ -1,0 +1,116 @@
+body{
+  background: skyblue url("bg.jpg") no-repeat fixed 0 0/  100vw 100vh;
+}
+
+div{
+
+  /* border: 5px dotted red; */
+
+
+}
+
+
+div[id^="cloud"]{
+  position: absolute;
+  /* opacity: 30%; */
+  /* animation-name: bob;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; */
+}
+
+#cloud_far_1{
+
+  /* margin-top: 50px; */
+  /* border: 10px dotted black; */
+  animation-name: pan;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation: bob 4s ease-in-out infinite, pan 30s linear infinite reverse;
+
+}
+#cloud_far_2{
+
+  /* margin-top: 50px; */
+  /* border: 10px dotted black; */
+  animation-name: pan;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation: bob 4s ease-in-out infinite, pan 30s linear infinite reverse;
+
+}
+#cloud_medium_2{
+  margin-top: 50px;
+  /* border: 10px dotted black; */
+  animation-name: pan;
+  animation-duration: 25s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+
+  animation: bob 5s ease-in-out infinite, pan 25s linear infinite reverse;
+
+
+}
+
+#cloud_near_3{
+
+  /* margin-top: 600px; */
+  margin-top: 100px;
+  /* border: 10px dotted black; */
+  /* animation-name: pan ;
+  animation-duration: 18s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse; */
+  animation: bob 6s ease-in-out infinite, pan 18s linear infinite reverse;
+
+
+}
+#cloud_close_4{
+  margin-top: 150px;
+  /* border: 10px dotted black; */
+  animation-name: pan;
+  animation-duration: 15s ;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation: bob 7s ease-in-out infinite, pan 15s linear infinite reverse;
+
+
+}
+@keyframes pan {
+  0%{
+
+    margin-left: 100%;
+  }
+
+  100%{
+
+    margin-left:-70%;
+  }
+
+}
+
+@keyframes bob {
+  0%{transform: translateY(0px);}
+  25%{transform: translateY(20px);}
+  50%{transform: translateY(0px);}
+  75%{transform: translateY(20px);}
+  100%{transform: translateY(0px);}
+
+  /* 0%{
+
+    margin-top: 30px;
+  }
+
+  100%{
+
+    margin-top: 0px;
+  } */
+
+}
